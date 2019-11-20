@@ -13,4 +13,9 @@ public class DcController {
     public String dc() {
         return consumerService.consume();
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello world";
+    }
 }

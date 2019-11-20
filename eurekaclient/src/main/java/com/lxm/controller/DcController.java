@@ -15,11 +15,6 @@ public class DcController {
     public String dc() {
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
-        try {
-            Thread.sleep(50000L);
-        }catch (InterruptedException ex){
-            ex.printStackTrace();
-        }
         return services;
     }
 }
